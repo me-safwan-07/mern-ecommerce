@@ -250,8 +250,8 @@ router.post(
 // fetch products api
 router.get(
   '/',
-  auth,
-  role.check(ROLES.Admin, ROLES.Merchant),
+  // auth,
+  // role.check(ROLES.Admin, ROLES.Merchant),
   async (req, res) => {
     try {
       let products = [];
